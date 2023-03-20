@@ -1,0 +1,232 @@
+table
+{
+    text-align: center;
+    color: rgb(56, 7, 99);
+    padding: 0.2rem;
+    border: 3px solid rgb(22, 106, 122)
+    
+}
+th,td{
+    text-align: center;
+    color: rgb(56, 7, 99);
+    padding: 0.2rem;
+    border: 4px solid rgb(119, 40, 98);
+
+}
+
+header{
+
+    height: 5rem;
+    line-height: 5rem;
+    background-color: gray;
+    top: 0;
+    right: 0%;
+    width: 100%;
+}
+
+header>img{
+
+    height: 5rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%; 
+  }
+
+  html
+  {
+    scroll-behavior: smooth;
+    font-size: 17px;
+    background-color: rgb(15, 15, 15);
+    color:rgb(119, 40, 98)
+
+  }
+
+body
+{
+    padding: 1.5rem;
+    margin: 0;
+}
+
+h1
+{
+
+font: Open Sans;
+font-size: 34px;
+font-weight: 900;
+text-align: center; 
+
+}
+
+
+.italic
+{
+    font-style: italic;
+    color:rgb(22, 106, 122);
+    text-transform: uppercase;
+}
+
+.bordering
+{
+
+border-style: dotted;
+border-color: rgb(22, 106, 122);
+background-color: transparent;
+
+}
+
+.shadowing
+{
+    box-shadow: 3px 3px 3px green,-3px -3px 3px green;
+    text-shadow: 3px 3px 3px red;
+}
+
+.section_title
+{
+
+    color: rgb(22, 106, 122);
+    font: "Times New Roman",Times,serif;
+}
+
+.firstcell
+{
+    text-decoration: underline;
+}
+
+td:hover{
+    color: white;
+    transition-duration: 0.5s;
+}
+th:hover{
+    color: white;
+    transition-duration: 0.5s;
+}
+
+figure>img:hover{
+    opacity: 0.7;
+    transition-duration: 0.7s;
+}
+
+figure{
+
+    text-align: center;
+}
+
+h1:hover{
+    text-shadow: 2px 2px 2px rgb(22, 106, 122);
+    transition-duration: 0.5s;
+}
+
+a:hover{
+font-size: 20px;
+transition-duration: 0.1s;
+}
+
+.gridlines
+{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+}
+
+.button {
+    background-color: rgb(22, 106, 122);
+    border-radius: 15px;
+    color: white;
+    padding: 10px 12px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 12%; 
+
+  }
+
+#container
+{
+    display:grid;
+    grid-gap: 5px;
+    grid-template-areas:
+    "bine bine bine bine bine"
+    "noutati noutati noutati noutati anunturi"
+    "noutati noutati noutati noutati orar"
+    "galerie galerie galerie galerie galerie"
+    ;
+}
+
+
+#s1{
+    grid-area: bine;
+}
+
+#s2{
+    grid-area: noutati;
+}
+
+#s3{
+    grid-area: anunturi;
+}
+
+#s4{
+    grid-area: orar;
+}
+
+#s5{
+    grid-area: galerie;
+}
+
+.section{
+
+    margin: 1%;
+}
+
+.dropbtn {
+    background-color:rgb(22, 106, 122);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color: rgb(9, 75, 88);}
+
+  #centertext{
+    display: block;
+    text-align: center;
+  }
