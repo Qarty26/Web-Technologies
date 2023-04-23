@@ -1,0 +1,69 @@
+html{
+
+  background-image: url(fundal_gal.avif);
+
+}
+.photo-container {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+.photo {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.text-box {
+  position: absolute;
+  bottom: -150px; 
+  left: 0;
+  width: 100%;
+  height: 150px; 
+  background-color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  transition: bottom 0.5s ease-out;
+  visibility: visible;
+  text-align: center;
+  font-weight: bold;
+  font-family:'Times New Roman', Times, serif;
+
+}
+.show-text-box {
+  bottom: -120px;
+  visibility: hidden;
+}
+
+.grid{
+  display: grid;
+  grid-template-areas:"D . S .";
+}
+
+.grid img{
+  padding-top: 50px;
+  width: 60%;
+  
+}
+
+#denis{
+  grid-area: D;
+}
+
+#sescu{
+  grid-area: S;
+}
+
+#titlu{
+
+  color:rgb(241, 37, 37);
+    -webkit-text-stroke-width: 0.8px;
+    -webkit-text-stroke-color: black;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 50px;
+  padding: 50px;
+
+}
