@@ -1,6 +1,8 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: rgb(30, 30, 36);
+    color: rgb(197, 195, 198);
   }
   
   button {
@@ -15,10 +17,11 @@ body {
   }
   
   #menuButton {
-    position: fixed;
+    position: absolute;
     top: 10px;
     left: 10px;
     width: 45px;
+    z-index: 1000;
   }
   
   #menu {
@@ -27,9 +30,10 @@ body {
     left: -200px;
     width: 200px;
     height: 100%;
-    background-color: #fff;
+    background-color: rgb(221, 255, 120);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     transition: left 0.5s ease-in-out;
+    z-index: 1001;
   }
   
   #menu.open {
@@ -43,14 +47,14 @@ body {
     padding-bottom: 30px;
     font-size: 18px;
     border: none;
-    background-color: #f1f1f1;
+    background-color: rgb(221, 255, 118);
     color: #333;
     text-decoration: none;
     text-align: center;
   }
   
   .menu-link:hover {
-    background-color: #ddd;
+    background-color: rgb(240, 82, 82);
   }
   
   #closeButton {
@@ -59,8 +63,118 @@ body {
 
     font-size: 18px;
     border: none;
-    background-color: #ddd;
-    color: #333;
+    background-color: rgb(240, 82, 82);
+    color:rgb(209, 255, 71);  
     cursor: pointer;
+    border-radius: 8px;
+  }
+  /*----------------------------*/
+
+  .paragraf {
+    overflow: hidden;
+    word-wrap: break-word; 
+    padding-left: 75px;
+    padding-right: 75px; 
+    font-size: 25px;
+    text-align:justify;
+  }
+
+  #logo
+  {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .border
+  {
+    border: 2px solid black;
+    box-shadow: 20px rgba(0, 0, 0, 0.3);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+  }
+
+  .band
+  {
+    width: 100%;
+    height: 118px;
+    background-color: black;
+
+  }
+
+
+  .brightness-animation {
+    width: 100%;
+    filter: brightness(0); 
+    animation: brightnessChange 8s linear forwards; 
   }
   
+  @keyframes brightnessChange {
+    from { filter: brightness(0); }
+    to { filter: brightness(0.7); }
+  }
+
+  #abtus
+  {
+    font-size: 30px;
+    padding-left: 75px;
+    padding-top: 30px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: rgb(240, 82, 82);
+    transition: color 0.5s;
+  }
+
+#abtus:hover
+{
+  color: rgb(209, 255, 71);
+}
+
+
+
+footer
+{
+  bottom: 0;
+  height: 120px;
+  background-color: rgb(21, 21, 22);
+  color: rgb(221, 255, 120);
+
+  display: grid;
+  grid-template-areas: 
+  "c2 . . ."
+  "t2 . . ."
+  "e2 . . q2"
+  "a2 . . g2";
+  padding-left: 220px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#c
+{
+  grid-area: c2;
+}
+#t
+{
+  grid-area: t2;
+}
+#e
+{
+  grid-area: e2;
+}
+#a
+{
+  grid-area: a2;
+}
+#q
+{
+  grid-area: q2;
+  color: rgb(0, 0, 0);
+  transition: color 0.05s ease;
+}
+#g
+{
+  grid-area: g2;
+}
