@@ -1,6 +1,7 @@
 html{
 
-  background-image: url(fundal_gal.avif);
+  background-image: url(drivers_bck.jpg );
+  /* background-color: gray; */
 
 }
 .photo-container {
@@ -15,19 +16,19 @@ html{
 }
 .text-box {
   position: absolute;
-  bottom: -150px; 
+  bottom: -165px; 
   left: 0;
-  width: 100%;
-  height: 150px; 
+  width: 60%;
+  height: 165px; 
   background-color: white;
-  padding: 20px;
+  padding: 10px;
   box-sizing: border-box;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
   transition: bottom 0.5s ease-out;
   visibility: visible;
   text-align: center;
   font-weight: bold;
-  font-family:'Times New Roman', Times, serif;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
 }
 .show-text-box {
@@ -38,6 +39,9 @@ html{
 .grid{
   display: grid;
   grid-template-areas:"D . S .";
+  padding-top: 40px;
+  padding-bottom: 170px;
+  padding-left: 330px;
 }
 
 .grid img{
@@ -64,6 +68,122 @@ html{
   font-weight: bold;
   font-style: italic;
   font-size: 50px;
-  padding: 50px;
 
+}
+
+/*------------------------------------*/
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  display: block;
+  margin: 10px;
+  padding: 10px;
+  font-size: 18px;
+  border: none;
+  background-color: transparent;
+  color: #333;
+  cursor: pointer;
+}
+
+#menuButton {
+  position: relative;
+  top: 10px;
+  left: 10px;
+  width: 45px;
+  z-index: 1000;
+}
+
+#menu {
+  position: fixed;
+  top: 0;
+  left: -200px;
+  width: 200px;
+  height: 100%;
+  background-color: rgb(221, 255, 120);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: left 0.5s ease-in-out;
+  z-index: 1001;
+}
+
+#menu.open {
+  left: 0;
+}
+
+.menu-link {
+  display: block;
+  width: 100%;
+  padding-top:30px;
+  padding-bottom: 30px;
+  font-size: 18px;
+  border: none;
+  background-color: rgb(221, 255, 118);
+  color: #333;
+  text-decoration: none;
+  text-align: center;
+}
+
+.menu-link:hover {
+  background-color: rgb(240, 82, 82);
+}
+
+#closeButton {
+  display: block;
+  width: 90%;
+
+  font-size: 18px;
+  border: none;
+  background-color: rgb(240, 82, 82);
+  color:rgb(209, 255, 71);  
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+/* ------------------------- */
+footer
+{
+  bottom: 0;
+  height: 120px;
+  background-color: rgb(21, 21, 22);
+  color: rgb(221, 255, 120);
+
+  display: grid;
+  grid-template-areas: 
+  "c2 . . ."
+  "t2 . . ."
+  "e2 . . q2"
+  "a2 . . g2";
+  padding-left: 220px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#c
+{
+  grid-area: c2;
+}
+#t
+{
+  grid-area: t2;
+}
+#e
+{
+  grid-area: e2;
+}
+#a
+{
+  grid-area: a2;
+}
+#q
+{
+  grid-area: q2;
+  color: rgb(0, 0, 0);
+  transition: color 0.05s ease;
+}
+#g
+{
+  grid-area: g2;
 }
