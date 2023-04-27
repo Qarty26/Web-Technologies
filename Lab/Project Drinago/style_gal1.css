@@ -1,5 +1,6 @@
 html{
-    background-image: url("fundal_gal.avif");
+    /* background-image: url("fundal_gal.avif"); */
+  background-image: url("drivers_bck.jpg");
     background-repeat: repeat;
 }
 
@@ -17,20 +18,29 @@ html{
 
   }
 
+  @media (max-width:1000px)
+  {
+    .image-container img
+    {
+      width: 40%;
+    }
+  }
+
+  @media (max-width:700px)
+  {
+    .image-container img
+    {
+      width: 65%;
+    }
+  }
+
   .image-container img:hover {
 
     filter: brightness(80%);
     transform: scale(1.05);
-
-
-
-
   }
 
-
-
   #titlu{
-
     font-size: 50px;
     font-style: italic;
     font-weight: bold;
@@ -39,5 +49,118 @@ html{
     color:rgb(241, 37, 37);
     -webkit-text-stroke-width: 0.8px;
     -webkit-text-stroke-color: black;
-
   }
+
+  /*-----------------------------------*/
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  button {
+    display: block;
+    margin: 10px;
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    background-color: transparent;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  #menuButton {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    width: 45px;
+  }
+  
+  #menu {
+    position: fixed;
+    top: 0;
+    left: -200px;
+    width: 200px;
+    height: 100%;
+    background-color: rgb(221, 255, 120);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: left 0.5s ease-in-out;
+  }
+  
+  #menu.open {
+    left: 0;
+  }
+  
+  .menu-link {
+    display: block;
+    width: 100%;
+    padding-top:30px;
+    padding-bottom: 30px;
+    font-size: 18px;
+    border: none;
+    background-color: rgb(221, 255, 118);
+    color: #333;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  .menu-link:hover {
+    background-color: rgb(240, 82, 82);
+  }
+  
+  #closeButton {
+    display: block;
+    width: 90%;
+
+    font-size: 18px;
+    border: none;
+    background-color: rgb(240, 82, 82);
+    color:rgb(209, 255, 71);  
+    cursor: pointer;
+    border-radius: 8px;
+  }
+  /* //------------------------------------------------ */
+  footer
+{
+  bottom: 0;
+  height: 120px;
+  background-color: rgb(21, 21, 22);
+  color: rgb(221, 255, 120);
+
+  display: grid;
+  grid-template-areas: 
+  "c2 . . ."
+  "t2 . . ."
+  "e2 . . q2"
+  "a2 . . g2";
+  padding-left: 220px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#c
+{
+  grid-area: c2;
+}
+#t
+{
+  grid-area: t2;
+}
+#e
+{
+  grid-area: e2;
+}
+#a
+{
+  grid-area: a2;
+}
+#q
+{
+  grid-area: q2;
+  color: rgb(0, 0, 0);
+  transition: color 0.05s ease;
+}
+#g
+{
+  grid-area: g2;
+}
