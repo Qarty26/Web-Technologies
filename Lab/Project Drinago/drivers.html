@@ -6,11 +6,23 @@
   </head>
   <body>
 
+    <img id="menuButton" src="menu.jpg" alt="Menu" onclick="toggleMenu()">
+    <div id="menu">
+      <a href="main.html" class="menu-link">HOME</a>
+      <a href="calendar.html" class="menu-link">CALENDAR</a>
+      <a href="drivers.html" class="menu-link">DRIVERS</a>
+      <a href="galerie1.html" class="menu-link">GALERY</a>
+      <button id="closeButton" onclick="closeMenu()">Close</button>
+    </div>
+    
+
+  
+
     <div id="titlu">Driver Line-up</div>
 
     <div id="denis" class="grid">
     <div class="photo-container">
-      <img src="Denis_Boriceanu.jpeg" alt="your photo" class="photo">
+      <img src="Denis_Boriceanu.jpeg" alt="Bori" class="photo">
       <div class="text-box">
         <p>Name: Andrew Denis Boriceanu</p>
         <p>Age: 16</p>
@@ -19,14 +31,23 @@
     </div>
 
     <div id="sescu" class="photo-container">
-      <img src="Valer_Sescu.jpeg" alt="your photo2" class="photo">
+      <img src="Valer_Sescu.jpeg" alt="Valer" class="photo">
       <div class="text-box">
-        <p>Name: Sescu-Urse Valeriu Gabriel</p>
+        <p>Name: Sescu-Ursu Valeriu Gabriel</p>
         <p>Age: 8</p>
         <p>Category: Mini</p>
       </div>
     </div>
   </div>
+
+  <footer>
+    <div id="c">CONTACT</div>
+    <div id="t">Tel: 0726 326 886</div>
+    <div id="e">Email: drinago.racing@gmail.com</div>
+    <div id="a">Adress: Bucharest</div>
+    <div id="q">Created by Qarty</div>
+    <div id="g">Github: github.com/Qarty26</div>
+  </footer>
 
     <script src="script_drivers.js"></script>
   </body>
