@@ -3,33 +3,32 @@
 
 <html>
     <head>
-
         <title>Drinago Racing</title>
         <link rel="stylesheet" href="style_calendar.css">
 
-        <!-- <div class="menu-container">
-          <button class="menu-btn">Menu</button>
-          <div class="menu">
-            <ul>
-              <li><a href="main.html">Home</a></li>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Calendar</a></li>
-              <li><a href="#">Our Drivers</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-          </div>
-        </div>
-     -->
-     
+
     </head>
 
     
-      
-    
+
     <div class="bg-image"></div>
 
+    <img id="menuButton" src="menu.jpg" alt="Menu" onclick="toggleMenu()">
+
+    <div id="menu">
+      <a href="main.html" class="menu-link">HOME</a>
+      <a href="calendar.html" class="menu-link">CALENDAR</a>
+      <a href="drivers.html" class="menu-link">DRIVERS</a>
+      <a href="galerie1.html" class="menu-link">GALERY</a>
+      <button id="closeButton" onclick="closeMenu()">Close</button>
+    </div>
+    
+
 <div class="bg-text">
-     
+
+  <!-- <div>test,ignore</div>
+  <div>test,ignore pt2</div> -->
+
 <div id="campionat">ROMANIAN KARTING MASTERS</div>
 <section id="etape">
 
@@ -37,7 +36,7 @@
 
       <div class="dropdown">
         <button class="dropbtn">
-          <span class="text">‣Etapa 1: 08-09.04.2023</span>
+          <span class="text">Etapa 1: 08-09.04.2023</span>
         </button>
         <div class="dropdown-content">
           <img src="amc.jpg" alt="">
@@ -51,7 +50,7 @@
 <div>
   <div class="dropdown">
     <button class="dropbtn">
-      <span class="text">‣Etapa 2: 13-14.05.2023</span>
+      <span class="text">Etapa 2: 13-14.05.2023</span>
     </button>
     <div class="dropdown-content">
       <img src="prejmer.jpg" alt="">
@@ -63,7 +62,7 @@
 <div>
   <div class="dropdown">
     <button class="dropbtn">
-      <span class="text">‣Etapa 3: 27-28.05.2023</span>
+      <span class="text">Etapa 3: 27-28.05.2023</span>
     </button>
     <div class="dropdown-content">
       <img src="skatkart.jpg" alt="">
@@ -75,7 +74,7 @@
 <div>
   <div class="dropdown">
     <button class="dropbtn">
-      <span class="text">‣Etapa 4: 08-09.07.2023</span>
+      <span class="text">Etapa 4: 08-09.07.2023</span>
     </button>
     <div class="dropdown-content">
       <img src="amc.jpg" alt="">
@@ -87,7 +86,7 @@
 <div>
       <div class="dropdown">
         <button class="dropbtn">
-          <span class="text">‣Etapa 5: 22-23.07.2023</span>
+          <span class="text">Etapa 5: 22-23.07.2023</span>
         </button>
         <div class="dropdown-content">
           <img src="prejmer.jpg" alt="">
@@ -99,7 +98,7 @@
 <div>
       <div class="dropdown">
         <button class="dropbtn">
-          <span class="text">‣Etapa 6: 09-10.09.2023</span>
+          <span class="text">Etapa 6: 09-10.09.2023</span>
         </button>
         <div class="dropdown-content">
           <img src="speedpark.jpg " alt="">
@@ -112,7 +111,7 @@
   <div>
     <div class="dropdown">
       <button class="dropbtn">
-        <span class="text">‣Cupa RKM: 28-29.10.2023</span>
+        <span class="text">Cupa RKM: 28-29.10.2023</span>
       </button>
       <div class="dropdown-content">
         <img src="prejmer.jpg" alt="">
@@ -124,5 +123,18 @@
 </section>
 
 </div>
+
+
+<footer>
+  <div id="c">CONTACT</div>
+  <div id="t">Tel: 0726 326 886</div>
+  <div id="e">Email: drinago.racing@gmail.com</div>
+  <div id="a">Adress: Bucharest</div>
+  <div id="q">Created by Qarty</div>
+  <div id="g">Github: github.com/Qarty26</div>
+</footer>
+
+
+<script src="script_calendar.js"></script>
 
 </html>
